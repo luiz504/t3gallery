@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["Posthog", "Upstash"],
+  "cSpell.words": ["nextjs", "Posthog", "trpc", "Upstash"],
   "cSpell.language": "en",
   "typescript.tsdk": "node_modules/typescript/lib"
 }
