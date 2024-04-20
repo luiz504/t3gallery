@@ -51,6 +51,13 @@ const config = {
         drizzleObjectName: ['db'],
       },
     ],
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ],
     'prettier/prettier': [
       'error',
       {
