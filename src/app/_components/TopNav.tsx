@@ -1,5 +1,6 @@
 'use client'
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { type FC } from 'react'
 import { UploadButton } from '~/utils/uploadthing'
@@ -8,7 +9,7 @@ export const TopNav: FC = () => {
   const router = useRouter()
   return (
     <nav className="flex w-full items-center justify-between border-b p-4 text-xl font-semibold">
-      <div>Gallery</div>
+      <Link href="/">Gallery</Link>
       <div className="flex gap-4">
         <SignedOut>
           <SignInButton />
