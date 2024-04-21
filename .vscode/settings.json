@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["nextjs", "Posthog", "trpc", "Upstash"],
+  "cSpell.words": [
+    "clientside",
+    "nextjs",
+    "Posthog",
+    "trpc",
+    "uploadthing",
+    "Upstash"
+  ],
   "cSpell.language": "en",
   "typescript.tsdk": "node_modules/typescript/lib"
 }
