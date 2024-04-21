@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { SignedIn, SignedOut } from '@clerk/nextjs'
 import Image from 'next/image'
+import Link from 'next/link'
 import { type FC } from 'react'
 
 import { fetchMyImages } from '~/server/queries/fetch-my-images'
@@ -14,7 +15,10 @@ const Gallery: FC = async () => {
     <>
       {images.map((image) => (
         <div key={image.id} className="flex h-48 w-48 flex-col">
-          <div className="flex flex-1 bg-slate-800/30">
+          <Link
+            href={`/img/${image.id}`}
+            className="flex flex-1 bg-slate-800/30"
+          >
             <Image
               src={image.url}
               style={{ objectFit: 'contain' }}
@@ -22,7 +26,8 @@ const Gallery: FC = async () => {
               height={480}
               alt={image.name}
             />
-          </div>
+          </Link>
+
           <div className="truncate">{image.name}</div>
         </div>
       ))}
