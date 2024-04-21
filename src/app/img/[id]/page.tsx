@@ -1,6 +1,13 @@
+import { ImageFullView } from '~/components/image-full-view'
+
 type Props = {
   params: { id: string }
 }
-export default function ImgModal({ params: { id } }: Props) {
-  return <div>{id}</div>
+export default function ImgPage({ params: { id } }: Props) {
+  const idAsNumber = Number(id)
+
+  if (isNaN(idAsNumber)) {
+    throw new Error('Invalid id')
+  }
+  return <ImageFullView id={idAsNumber} />
 }
