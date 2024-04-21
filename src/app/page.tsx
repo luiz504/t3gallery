@@ -38,7 +38,7 @@ const Gallery: FC = async () => {
 export default async function HomePage() {
   return (
     <main>
-      <div className="flex flex-wrap justify-center gap-4 px-4">
+      <div className="flex flex-wrap justify-center gap-4 p-4">
         <SignedOut>
           <div className="flex w-full justify-center text-center text-2xl">
             Please sign in above
