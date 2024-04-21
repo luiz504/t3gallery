@@ -11,8 +11,8 @@
 - [x] Add image upload (uploadThing)
 - [x] "taint" (server-only)
 - [x] Use Next/Image component
-- [ ] Error management (w/ Sentry)
-- [ ] Routing/image page (parallel route) (new feature of NextJS App Router)
+- [x] Error management (w/ Sentry)
+- [x] Routing/image page (parallel route) (new feature of NextJS App Router)
 - [ ] Delete button (w/ Server Actions)
 - [ ] Analytics (Posthog)
 - [ ] Rate limiting (Upstash)
