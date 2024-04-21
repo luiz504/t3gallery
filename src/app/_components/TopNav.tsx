@@ -15,10 +15,20 @@ export const TopNav: FC = () => {
         </SignedOut>
         <SignedIn>
           <UploadButton
+            appearance={{
+              button: {
+                width: 'auto',
+                minWidth: 144,
+                paddingRight: 8,
+                paddingLeft: 8,
+              },
+            }}
             endpoint="imageUploader"
             onClientUploadComplete={() => router.refresh()}
           />
-          <UserButton />
+          <div className="flex min-w-[28px] items-center">
+            <UserButton />
+          </div>
         </SignedIn>
       </div>
     </nav>

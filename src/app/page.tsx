@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import { SignedIn, SignedOut } from '@clerk/nextjs'
 import { type FC } from 'react'
-import { db } from '~/server/db'
+
+import { fetchMyImages } from '~/server/queries/fetch-my-images'
 
 export const dynamic = 'force-dynamic'
 
 const Gallery: FC = async () => {
-  const images = await db.query.images.findMany({
-    orderBy: (model, { desc }) => desc(model.id),
-  })
+  const images = await fetchMyImages()
+
   return (
     <>
       {images.map((image) => (
