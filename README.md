@@ -13,6 +13,8 @@
 - [x] Use Next/Image component
 - [x] Error management (w/ Sentry)
 - [x] Routing/image page (parallel route) (new feature of NextJS App Router)
+- [x] Update upload button
+- [ ] ShadcnUIify (toast)
 - [ ] Delete button (w/ Server Actions)
 - [ ] Analytics (Posthog)
 - [ ] Rate limiting (Upstash)
