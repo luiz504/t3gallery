@@ -5,13 +5,16 @@ import { useRouter } from 'next/navigation'
 import { ArrowUpTraySVG } from '~/components/icons/ArrowUpTray'
 import { toast } from 'sonner'
 import { LoadingSpinner } from '~/components/icons/LoadingSpinner'
+import { usePostHog } from 'posthog-js/react'
 
 const UPLOAD_TOAST_ID = 'upload-begin'
 
 export const SimpleUploadButton: FC = () => {
   const router = useRouter()
+  const posthog = usePostHog()
   const { inputProps } = useUploadThingInputProps('imageUploader', {
     onUploadBegin: () => {
+      posthog.capture('upload_begin')
       toast(
         <div className="flex items-center gap-2">
           <LoadingSpinner /> <span className="text-lg">Uploading...</span>
