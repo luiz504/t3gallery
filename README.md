@@ -15,6 +15,6 @@
 - [x] Routing/image page (parallel route) (new feature of NextJS App Router)
 - [x] Update upload button
 - [x] ShadcnUIify (toast)
-- [ ] Delete button (w/ Server Actions)
-- [ ] Analytics (Posthog)
+- [x] Delete button (w/ Server Actions)
+- [x] Analytics (Posthog)
 - [ ] Rate limiting (Upstash)

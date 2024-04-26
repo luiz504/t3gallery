@@ -3,6 +3,8 @@ import { clerkClient } from '@clerk/nextjs/server'
 import { type FC } from 'react'
 
 import { getImage } from '~/server/queries/get-image'
+import { Button } from './ui/button'
+import { deleteImage } from '~/server/mutations/delete-image'
 
 type Props = {
   id: number
@@ -28,6 +30,18 @@ export const ImageFullView: FC<Props> = async ({ id }) => {
         <div className="flex flex-col p-2">
           <span>Created On:</span>
           <span>{createdOn}</span>
+        </div>
+        <div className="flex justify-end p-2">
+          <form
+            action={async () => {
+              'use server'
+              await deleteImage(image.id)
+            }}
+          >
+            <Button variant={'destructive'} type="submit">
+              Delete
+            </Button>
+          </form>
         </div>
       </div>
     </div>
