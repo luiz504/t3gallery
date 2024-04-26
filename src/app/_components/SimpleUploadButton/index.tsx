@@ -30,6 +30,11 @@ export const SimpleUploadButton: FC = () => {
       toast('Upload complete!')
       router.refresh()
     },
+    onUploadError: (error) => {
+      posthog.capture('upload_error', { error })
+      toast.dismiss(UPLOAD_TOAST_ID)
+      toast.error('Upload failed')
+    },
   })
 
   return (

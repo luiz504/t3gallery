@@ -4,6 +4,8 @@
     "clsx",
     "nextjs",
     "Posthog",
+    "Ratelimit",
+    "Ratelimited",
     "sonner",
     "tailwindcss",
     "trpc",
