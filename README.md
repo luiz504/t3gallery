@@ -46,3 +46,4 @@
 - [ ] Global Gallery
 - [ ] Play with server components (Goal Have base Layout Static Rendering and within Dynamic Rendering components)
 - [ ] Improve Not Signed Home page layout
+- [ ] Improve Upload toast error msgs
