@@ -37,7 +37,7 @@
 
 ## TODOS
 
-- [ ] Fix the page layout for images of different resolutions
+- [x] Fix the page layout for images of different resolutions
 - [ ] Select images on the dashboard to do actions on multiple items once (Zustand or contextApi)
 - [ ] Infinite Scroll
 - [ ] Folders Albums
@@ -45,5 +45,5 @@
 - [ ] Limit amount of files by user
 - [ ] Global Gallery
 - [ ] Play with server components (Goal Have base Layout Static Rendering and within Dynamic Rendering components)
-- [ ] Improve Not Signed Home page layout
-- [ ] Improve Upload toast error msgs
+- [x] Improve Not Signed Home page layout
+- [x] Improve Upload toast error msgs
