@@ -16,12 +16,12 @@ export const ImageFullView: FC<Props> = async ({ id }) => {
 
   const createdOn = new Date(image.createdAt).toLocaleDateString()
   return (
-    <div className="flex h-full w-full ">
-      <div className="flex flex-shrink items-center justify-center">
+    <div className="grid h-full w-full grid-cols-1  sm:grid-cols-[1fr,192px]">
+      <div className="flex items-center justify-center">
         <img src={image.url} className="object-contain" alt={image.name} />
       </div>
 
-      <div className="border-1 flex w-48 flex-col  border-l">
+      <div className="border-1 flex flex-col sm:border-l max-sm:border-t">
         <div className="border-b p-2 text-center text-lg">{image.name}</div>
         <div className="flex flex-col p-2">
           <span>Uploaded By:</span>

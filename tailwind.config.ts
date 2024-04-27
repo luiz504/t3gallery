@@ -81,6 +81,7 @@ const config = {
       },
       screens: {
         xs: '475px',
+        'max-sm': { max: '639px' },
       },
     },
   },
