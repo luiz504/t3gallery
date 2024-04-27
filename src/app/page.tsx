@@ -6,17 +6,15 @@ export const dynamic = 'force-dynamic'
 
 export default async function HomePage() {
   return (
-    <main>
-      <div className="flex">
-        <SignedOut>
-          <div className="flex w-full justify-center text-center text-2xl">
-            Please sign in above
-          </div>
-        </SignedOut>
-        <SignedIn>
-          <Gallery />
-        </SignedIn>
-      </div>
-    </main>
+    <div className="flex flex-1">
+      <SignedOut>
+        <div className="flex w-full flex-1 items-center justify-center text-center text-2xl">
+          Please sign in above
+        </div>
+      </SignedOut>
+      <SignedIn>
+        <Gallery />
+      </SignedIn>
+    </div>
   )
 }

@@ -8,9 +8,9 @@ export const Gallery: FC = async () => {
   const images = await fetchMyImages()
 
   return (
-    <div className=" flex flex-wrap justify-center gap-4 p-4">
+    <div className="grid w-full grid-cols-1 content-start gap-4 p-4 xs:mx-4 xs:grid-cols-gallery">
       {images.map((image) => (
-        <div key={image.id} className="flex h-48 w-48 flex-col">
+        <div key={image.id} className="flex h-48 flex-col">
           <Link
             href={`/img/${image.id}`}
             className="flex flex-1 overflow-hidden bg-slate-800/30"
